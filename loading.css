@@ -1,0 +1,6 @@
+
+/* progress */
+.progress {background: #000; color: #f6f6ee; height: 98vh; width: 100%; position: absolute; z-index: 5000;}
+.progress-bar {	border-top: 1px solid rgb(246,246,238);	position: absolute;	top: 50%; width: 0%;}
+.progress-text {font: 14px;	margin-top: 10px; position: absolute; text-align: center; top: 50%; width: 100%;}
+.progress-complete .progress-bar {border-top-color: rgb(246,246,238);}

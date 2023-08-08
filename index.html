@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Musée d'Orsay</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+  <link rel="stylesheet" href="loading.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cookie.css">
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/img/파비콘/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/img/파비콘/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/img/파비콘/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/파비콘/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/img/파비콘/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/img/파비콘/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/img/파비콘/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/img/파비콘/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/파비콘/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/img/파비콘/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/파비콘/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/img/파비콘/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/파비콘/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+ <!-- loading -->
+ <div class="progress" id="progress">
+  <span class="progress-bar"></span>
+  <span class="progress-text">0</span>
+</div>
+ 
+  <!-- 쿠키 -->
+  <div class="notice">
+    <span>notice</span>
+    <p>
+      본 사이트는 상업용 실제 공식 사이트가 아니며
+      개인 포토폴리오용 리뉴얼 페이지입니다.
+    </p>
+
+    <input type="checkbox" id="cb">
+    <label class="hide" for="cb">7일간 보이지 않기</label>
+    <a href="#" class="close">x</a>
+  </div>
+
+  <!-- InternetExplore -->
+  <div class="ie">
+    <p>본 사이트는 Full CSS 3D가 사용된 페이지로
+      webkit기반 브라우저(크롬, 사파리 등)에서 확인하십시오.
+    </p>
+    <h2>본 사이트는 포트폴리오용이며, 크롬,엣지 또는 사파리에서 확인해 주시기 바랍니다.<br />
+      감사합니다.
+    </h2>
+  </div>
+
+
+
+  <section id="wrap">
+    <div class="header">
+      <div class="header_continer">
+        <div class="main_page">
+          <div class="main_logo"><img src="img/logo.png" alt=""></div>
+          <div class="main">
+
+          </div>
+          <div class="cover">
+            <div class="first-parallel"></div>
+          </div>
+
+          <div class="main_dot">
+            <img src="img/circle.png" alt="" class="circle1">
+            <img src="img/circle_font.png" alt="" class="circle2">
+          </div>
+        </div>
+      </div>
+
+      <div class="header_menu">
+        <ul class="menu_right">
+          <li><a href="#">Visit</a></li>
+          <li><a href="#">Exhibitions</a></li>
+          <li><a href="#">Event</a></li>
+          <li><a href="#">Learn</a></li>
+          <li><a href="#">Shop</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div id="container">
+      <div class="scroll box1">
+        <div class="position">
+          <div class="title"><img src="img/title_1.png" alt=""></div>
+          <div class="close">
+            <button class="close-button">
+              <i class="fa-solid fa-circle-xmark"></i>
+            </button>
+            <div class="image-container">
+              <div class="caption">Les Vénus de Milo ont les deux bras coupés et ne peuvent pas connaître la forme
+                originale. Le haut du corps non habillé et la partie inférieure du corps qui coulait, et le prototype a
+                été longtemps t </div>
+            </div>
+            <div class="image-container2">
+              <div class="caption">L'arbitre de Paris est un mythe grec ancien qui a été à l'origine de la guerre de
+                Troie. Voici le contenu du mythe. Eris, la déesse de la discorde, </div>
+            </div>
+            <div class="image-container3">
+              <div class="caption">En revanche, la position des Grecs est différente. Selon les Grecs, il y avait à
+                l'époque une passion entre l'armée française et la marine turque à propos de cette statue, dont les bras
+                ont été</div>
+            </div>
+            <div class="circle animation" onclick="areaClicked1()">
+            </div>
+            <div class="circle animation1" onclick="areaClicked2()">
+            </div>
+            <div class="circle animation2" onclick="areaClicked3()">
+            </div>
+            <img class="millo" src="venus-drawing2.png">
+
+          </div>
+          <article class="num_one">
+            <img src="img/비너스 그림.jpg" alt="monet" class="monet">
+            <p>
+              IDHEAL, l'Institut des Hautes Études pour l’Action dans le Logement, est une association de loi 1901
+              reconnue d'intérêt général, un lieu de réflexion et de dialogue.
+
+              Notre ambition : remettre le logement « à sa place», centrale pour les ménages, les acteurs économiques et
+              les responsables politiques.
+
+              Notre action : fédérer un réseau de têtes pensantes, chercheurs et professionnels, capables d'évaluer et
+              de questionner les modèles de fabrication du logement et les usages de l’habitat.
+
+              L'Institut diffuse librement ses idées pour animer le débat public, grâce à des publications, des
+              conférences et un cycle
+              IDHEAL, l'Institut des Hautes Études pour l’Action dans le Logement, est une association de loi 1901
+              reconnue d'intérêt général, un lieu de réflexion et de dialogue.
+
+            </p>
+          </article>
+        </div>
+
+
+
+        <article class="num_two">
+          <img src="img/근세 피에타.jpg" alt="monet" class="monet">
+          <p>
+            IDHEAL, l'Institut des Hautes Études pour l’Action dans le Logement, est une association de loi 1901
+            reconnue d'intérêt général, un lieu de réflexion et de dialogue.
+
+            Notre ambition : remettre le logement « à sa place», centrale pour les ménages, les acteurs économiques et
+            les responsables politiques.
+
+            Notre action : fédérer un réseau de têtes pensantes, chercheurs et professionnels, capables d'évaluer et
+            de questionner les modèles de fabrication du logement et les usages de l’habitat.
+
+            L'Institut diffuse librement ses idées pour animer le débat public, grâce à des publications, des
+            conférences et un cycle
+            IDHEAL, l'Institut des Hautes Études pour l’Action dans le Logement, est une association de loi 1901
+            reconnue d'intérêt général, un lieu de réflexion et de dialogue.
+
+          </p>
+        </article>>
+        <!-- //num_two -->
+      </div>
+
+
+
+      <div class="scroll box2">
+        <div class="position">
+          <div class="title"><img src="img/title_2-2.png" alt=""></div>
+          <div class="bar"></div>
+          <div class="swiper_wrapper">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/piccsso1-1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/piccsso2.jpg" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <article class="num_three">
+            <span>
+              <p>
+                IDHEAL, l'Institut des Hautes Études pour l’Action dans le Logement, est une association de loi 1901
+                reconnue d'intérêt général, un lieu de réflexion et de dialogue.
+
+                Notre ambition : remettre le logement « à sa place», centrale pour les ménages, les acteurs économiques
+                et
+                les responsables politiques.
+
+                Notre action : fédérer un réseau de têtes pensantes, chercheurs et professionnels, capables d'évaluer et
+                de questionner les modèles de fabrication du logement et les usages de l’habitat.
+
+                L'Institut diffuse librement ses idées pour animer le débat public, grâce à des publications, des
+                conférences et un cycle
+                IDHEAL, l'Institut des Hautes Études pour l’Action dans le Logement, est une association de loi 1901
+                reconnue d'intérêt général, un lieu de réflexion et de dialogue.
+
+              </p>
+
+              <div class="card one clearfix">
+                <figure class="front">
+                  <img src="img/피카소 초기.png" alt="이미지">
+                </figure>
+                <div class="back">
+                  <img src="img/피카소 후기.png" alt="이미지">
+                </div>
+              </div>
+              <p>
+                Les Vénus de Milo ont les deux bras coupés et ne peuvent pas connaître la forme originale. Le haut du
+                corps non habillé et la partie inférieure du corps qui coulait, et le prototype a été longtemps étudié
+                par des archéologues et des historiens de l'art. Les savants estiment que la main droite descend vers la
+                jambe gauche et tientLes Vénus de Milo ont les deux bras coupés et ne peuvent pas connaître la forme
+                originale. Le haut du corps non habillé et la partie inférieure du corps qui coulait, et le prototype a
+                été longtemps étudié par des archéologues et des historiens de l'art. Les savants estiment que la main
+                droite descend vers la jambe gauche et tientLes Vénus de Milo ont les deux bras coupés et ne peuvent pas
+                connaître la forme originale. Le haut du corps non habillé et la partie inférieure du corps qui coulait,
+                et le prototype a été longtemps étudié par des archéologues et des historiens de l'art. Les savants
+                estiment que la main droite descend vers la jambe gauche et tientLes Vénus de Milo ont les deux bras
+                coupés et ne peuvent pas connaître la forme originale. Le haut du corps non habillé et la partie
+                inférieure du corps qui coulait, et le prototype a été longtemps étudié par desarchéologues et des
+                historiens de l'art. Les savants estiment que la main droite descend vers la jambe gauche et tientLes
+                Vénus de Milo ont les deux bras coupés et ne peuvent pas connaître la forme originale. Le haut du corps
+                non habillé et la partie inférieure du corps qui coulait, et le prototype a été longtemps étudié par des
+                archéologues et des historiens de l'art. Les savants estiment que la main droite descend vers la jambe
+                gauche et tientLes Vénus de Milo ont les deux bras coupés et ne peuvent pas connaître la forme
+                originale. Le haut du corps non habillé et la partie inférieure du corps qui coulait, et le prototype a
+                été longtemps étudié par des archéologues et des historiens de l'art. Les savants estiment que la main
+                droite descend vers la jambe gauche et tientLes Vénus de Milo ont les deux bras coupés et ne peuvent pas
+                connaître la forme originale. Le haut du corps non habillé et la partie inférieure du corps qui coulait,
+                et le prototype a été longtemps étudié par des archéologues et des historiens de l'art. Les savants
+                estiment que la main droite descend vers la jambe gauche et tient
+              </p>
+            </span>
+          </article>
+        </div>
+      </div>
+
+
+      <div class="scroll box3">
+        <div class="position">
+          <div class="title"><img src="img/title_3-3.png" alt=""></div>
+          <article class="num_four">
+
+            <p class="four_container">Ça déménage dans nos logements !</p>
+
+            <div class="acc">
+              <button class="accordion">Programme 2023-24</button>
+              <div class="panel">
+                <img src="img/art_1.jpg" alt="">
+                <p>techniques ingénieuses, transformant l'espace d'exposition en quelque chose qui rappelle un
+                  laboratoire ou un studio d'artiste où les visiteurs peuvent non seulement étudier les techniques en
+                  elles-mêmes. La </p>
+              </div>
+
+              <button class="accordion">Programme 2022-23</button>
+              <div class="panel">
+                <img src="img/art_2.jpg" alt="">
+                <p>présentation des constructions comme un aspect important des œuvres est une façon de démystifier
+                  délibérément les phénomènes rencontrés par le visiteur et d'en démystifier </p>
+              </div>
+
+              <button class="accordion">Programme 2021-22</button>
+              <div class="panel">
+                <img src="img/art_3.jpg" alt="">
+                <p>les aspects apparemment sensationnels. Olafur invite ainsi les visiteurs à prendre conscience de leur
+                  propre vision et à participer activement à la création et à l'expérimentation des œuvres. Nous </p>
+              </div>
+            </div>
+
+            <p>Les Vénus de Milo ont les deux bras coupés et ne peuvent pas connaître la forme originale. Le
+              haut du
+              corps non habillé et la partie inférieure du corps qui coulait, et le prototype a été longtemps étudié
+              par des archéologues et des historiens de l'art. Les savants estiment que la main droite descend vers la
+              jambe gauche et tientLes Vénus de Milo ont les deux bras coupés et ne peuvent pas connaître la forme
+              originale. Le haut du corps non habillé et la partie inférieure du corps qui coulait, et le prototype a
+              été longtemps étudié par des archéologues et des historiens de l'art. Les savants estiment que la main
+              droite descend vers la jambe gauche et tientLes Vénus de Milo ont les deux bras coupés et ne peuvent pas
+              connaître la forme originale. Le haut du corps non habillé et la partie inférieure du corps qui coulait,
+              et le prototype a été longtemps étudié par des archéologues et des historiens de l'art. Les savants
+              estiment que la main droite descend vers la jambe gauche et tientLes Vénus de Milo ont les deux bras
+              coupés et ne peuvent pas connaître la forme originale. Le haut du corps non habillé et la partie
+              inférieure du corps qui coulait, et le prototype a été longtemps étudié par desarchéologues et des
+              historiens de l'art. Les savants estiment que la main droite descend vers la jambe gauche et tientLes
+              Vénus de Milo ont les deux</p>
+        </div>
+
+
+        </article>
+      </div>
+    </div>
+    </div>
+    <div class="history_cider">
+
+      <div class="container">
+        <div class="cider_title">
+
+          <h2>dernier événement
+          </h2>
+        </div><!-- cider_title -->
+        <div class="cider_bottle">
+          <div class="bSlide">
+            <div class="bottle">
+              <img src="img/3페이지 고갱.png" alt="1950 bottle">
+              <div class="desc">
+                <button class="custom-btn btn-12"><span>Click!</span><span>Buy Tcket</span></button>
+              </div>
+            </div><!-- bottle -->
+          </div><!-- bSlide -->
+          <div class="bSlide">
+            <div class="bottle">
+              <img src="img/3페이지 마네.png" alt="1950 bottle">
+              <div class="desc">
+                <button class="custom-btn btn-12"><span>Click!</span><span>Buy Tcket</span></button>
+              </div>
+            </div><!-- bottle -->
+          </div><!-- bSlide -->
+
+          <div class="bSlide">
+            <div class="bottle">
+              <img src="img/3페이지 고갱.png" alt="1950 bottle">
+              <div class="desc">
+                <button class="custom-btn btn-12"><span>Click!</span><span>Buy Tcket</span></button>
+              </div>
+            </div><!-- bottle -->
+          </div><!-- bSlide -->
+          <div class="bSlide">
+            <div class="bottle">
+              <img src="img/3페이지 마네.png" alt="1950 bottle">
+              <div class="desc">
+                <button class="custom-btn btn-12"><span>Click!</span><span>Buy Tcket</span></button>
+              </div>
+            </div><!-- bottle -->
+          </div><!-- bSlide -->
+          <div class="bSlide">
+            <div class="bottle">
+              <img src="img/3페이지 모네.png" alt="1950 bottle">
+              <div class="desc">
+                <button class="custom-btn btn-12"><span>Click!</span><span>Buy Tcket</span></button>
+              </div>
+            </div><!-- bottle -->
+
+          </div><!-- bSlide -->
+        </div>
+      </div><!-- history_cider -->
+    </div>
+    <div class="youtube_museum ">
+      <div class="around">
+        <div class="text_around">
+          <img src="img/text_around.png" alt="" class="text_around">
+        </div>
+      </div>
+
+      <div class="glitch" data-text="OLAFUR ELIASSON EXPOSITION 2023">OLAFUR ELIASSON EXPOSITION 2023</div>
+      <div class="cursor"></div>
+      <div class="wrapper">
+        <div class="project p-1">
+          <div class="project-overlay">
+            <div class="container_two">
+              <video class="zoom" muted="" autoplay="" loop="" src="img/videoplayback.mp4"></video>
+            </div>
+            <div class="container_three">
+              <video class="zoom" muted="" autoplay="" loop=""
+                src="img/Olafur Eliasson interview_ Retrospective opens at Tate Modern _ Architecture _ Dezeen.mp4"></video>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section_one">
+        <div class="section_num">
+          <div class="demo">complex polyhedrons form</div>
+          <div class="demo_shadow">complex polyhedrons form</div>
+        </div>
+
+        <div id="subtitle2">
+          <svg viewBox="0 0 1320 300">
+            <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+              à prendre conscience
+            </text>
+          </svg>
+        </div>
+        <div id="subtitleContainer">
+          <div class="subtitle">
+            <h1>'La mise en place de la lumière ’</h1>
+            <h2>important aspect of the works</h2>
+            <p class="text-one">
+              démystifier délibérément</p>
+            <p class="text-two">
+              démystifier délibérément</p>
+            <p class="text-three">Olafur invite ainsi les visiteurs à prendre </p>
+            <p class="text-five">Olafur invite ainsi les visiteurs à prendre </p>
+            <p class="text-six">Olafur invite ainsi les visiteurs à prendre </p>
+            <p class="text-seven"> délibérément les phénomènes </p>
+            <p class="text-four">l'expérimentation des œuvres</p>
+            <div class="subtitle">
+              <p> délibérément les phénomènes </p>
+            </div>
+            <div class="subtitle">
+              <p> délibérément les phénomènes </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="section_four">
+      <section class="sticky">
+        <div class="row">
+          <div class="col">
+            <div class="child">
+
+              <div class="wrap section_five">
+                <div class="text">
+                  
+                  <!-- <h3 class="en_s">Les collections</h3> -->
+                </div>
+                <div class="slidewrap">
+                  <div class="slideshow">
+                    <div class="content">
+                      <div class="content-carrousel">
+                        <figure class="shadow"><img src="./img/slick1.jpg"></figure>
+                        <figure class="shadow"><img src="./img/slick2.jpg"></figure>
+                        <figure class="shadow"><img src="./img/slick3.jpg"></figure>
+                        <figure class="shadow"><img src="./img/slick4.jpg"></figure>
+                        <figure class="shadow"><img src="./img/slick5.jpg"></figure>
+                        <figure class="shadow"><img src="./img/slick6.jpg"></figure>
+                        <figure class="shadow"><img src="./img/slick7.jpg"></figure>
+                        <figure class="shadow"><img src="./img/slick8.jpg"></figure>
+                        <figure class="shadow"><img src="./img/slick9.jpg"></figure>
+                        <figure class="shadow"><img src="./img/slick10.jpg"></figure>
+                        <figure class="shadow"><img src="./img/slick11.jpg"></figure>
+                        <figure class="shadow"><img src="./img/slick12.jpg"></figure>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col">
+            <div class="child">T</div>
+          </div>
+          <div class="col">
+            <div class="child">A</div>
+          </div>
+          <div class="col">
+            <div class="child">T</div>
+          </div>
+          <div class="col">
+            <div class="child">U</div>
+          </div>
+          <div class="col">
+            <div class="child">E</div>
+          </div>
+          <div class="col">
+            <div class="child">T</div>
+          </div>
+          <div class="col">
+            <div class="child">T</div>
+          </div>
+          <div class="col">
+            <div class="child">E</div>
+          </div>
+
+
+         
+        </div>
+
+
+
+      </section>
+      
+    </div>
+   
+    <div class="section_three">
+      <div class="world">
+        <div class="stage">
+          <div class="house">
+            <section class="wall wall-left"></section>
+            <section class="wall wall-right">
+            </section>
+            <section class="wall wall-front wall-front-a">
+
+              <img src="img/Moyen Âge.png" class="human" id="human" alt="human">
+              <div class="textWrap">
+                <img src="img/3dtext_0.png" class="text3d" id="text3d" alt="text-3d">
+              </div>
+            </section>
+            <section class="wall wall-front wall-front-b">
+              <div class="wall-content">
+                <img src="img//로뎅 생각하는 사람.png" class="human" id="human" alt="human">
+                <div class="textWrap">
+                  <img src="img/3dtext_1.png" class="text3d" id="text3d" alt="text-3d">
+                </div>
+              </div>
+            </section>
+            <section class="wall wall-front wall-front-c">
+              <div class="wall-content">
+                <img src="img/baroke.png" class="human" id="human" alt="human">
+                <div class="textWrap">
+                  <img src="img/3dtext_2.png" class="text3d" id="text3d" alt="text-3d">
+                </div>
+              </div>
+            </section>
+            <section class="wall wall-front wall-front-d">
+              <div class="wall-content">
+                <img src="img/egypt.png" class="human" id="human" alt="human">
+                <div class="textWrap">
+                  <img src="img/3dtext_3.png" class="text3d" id="text3d" alt="text-3d">
+                </div>
+            </section>
+          </div>
+        </div>
+      </div><!-- stage -->
+    </div><!-- world -->
+    <div class="footer">
+      <div class="footer-container">
+        <div class="footer1">
+          <h2>Stay in touch</h2>
+          <ul>
+            <li>+4 (878) 8723578</li>
+            <li>220-248 kensington High Street<br>london</li>
+            <li>W8 6AG</li>
+            <li>questions@sculptmuseum.com</li>
+          </ul>
+          <label for="username" class="label"></label>
+          <input type="text" id="username" name="username" value="Enter email for newsletter">
+          <div class="footer2-1">
+            <ul>
+              <li><a href="https://www.instagram.com/museeorsay/"><i class="fab fa-instagram"></i></a></li>
+              <li><a href=""><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://m.facebook.com/profile.php?id=100072281028807"><i
+                    class="fab fa-facebook-square"></i></a></li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="footer2"></div>
+        <div class="map">
+          <img src="img/footer_map-01.png" alt="">
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+
+  </section>
+
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+
+  <!-- <script src="js/preload.js"></script> -->
+  <script src="js/cookie.js"></script>
+  <script src="js/dtext.js"></script>
+  <script src="js/gsap.js"></script>
+  <!-- <script src="js/loading.js"></script> -->
+  <script src="js/wall.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/preload.js"></script>
+
+</body>
+
+</html>
